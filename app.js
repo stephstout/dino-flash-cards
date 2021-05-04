@@ -18,74 +18,72 @@ let placeHolder = 0
 
 let flashCards = [
     {
-        question: "What is the longest dinosaur?",
-        answer: "The Argentinosaurus which measured over 40 meters!",
+        question: "Question: What is the longest dinosaur?",
+        answer: "Answer: The Argentinosaurus which measured over 40 meters!",
     }, 
     {
-        question: "What are the three time periods in which the dinosaurs lived?",
-        answer: "Triassic, Jurassic, and Cretaceous",
+        question: "Question: What are the three time periods in which the dinosaurs lived?",
+        answer: "Answer: Triassic, Jurassic, and Cretaceous",
     },
     {
-        question: "What do you call a person who studies dinosaurs?",
-        answer: "paleontologist",
+        question: "Question: What do you call a person who studies dinosaurs?",
+        answer: "Answer: paleontologist",
     },
     {
-        question: "What does Velociraptor mean?",
-        answer: "speedy thief",
+        question: "Question: What does Velociraptor mean?",
+        answer: "Answer: speedy thief",
     },
     {
-        question: "What is the oldest dinosaur found so far?",
-        answer: "The Euroraptor was found in Argentina and is 230 million years old.",
+        question: "Question: What is the oldest dinosaur found so far?",
+        answer: "Answer: The Euroraptor was found in Argentina and is 230 million years old.",
     },
     {
-        question: "When was the mass extinction of dinosaurs?",
-        answer: "65 million years ago",
+        question: "Question: When was the mass extinction of dinosaurs?",
+        answer: "Answer: 65 million years ago",
     },
     {
-        question: "Which dinosaur had the smallest brain?",
-        answer: "Stegosaurus",
+        question: "Question: Which dinosaur had the smallest brain?",
+        answer: "Amswer: Stegosaurus",
     },
     {
-        question: "How much food did a Tyrannosaurus rex consume each year?",
-        answer: "22 tons of meat",
+        question: "Question: How much food did a Tyrannosaurus rex consume each year?",
+        answer: "Answer: 22 tons of meat",
     }
 ]
-
-// const correctAnswers = []
 
 startButton.addEventListener("click", () => {
     flashCards = [
         {
-            question: "What is the longest dinosaur?",
-            answer: "The Argentinosaurus which measured over 40 meters!",
+            question: "Question: What is the longest dinosaur?",
+            answer: "Answer: The Argentinosaurus which measured over 40 meters!",
         }, 
         {
-            question: "What are the three time periods in which the dinosaurs lived?",
-            answer: "Triassic, Jurassic, and Cretaceous",
+            question: "Question: What are the three time periods in which the dinosaurs lived?",
+            answer: "Answer: Triassic, Jurassic, and Cretaceous",
         },
         {
-            question: "What do you call a person who studies dinosaurs?",
-            answer: "paleontologist",
+            question: "Question: What do you call a person who studies dinosaurs?",
+            answer: "Answer: paleontologist",
         },
         {
-            question: "What does Velociraptor mean?",
-            answer: "speedy thief",
+            question: "Question: What does Velociraptor mean?",
+            answer: "Answer: speedy thief",
         },
         {
-            question: "What is the oldest dinosaur found so far?",
-            answer: "The Euroraptor was found in Argentina and is 230 million years old.",
+            question: "Question: What is the oldest dinosaur found so far?",
+            answer: "Answer: The Euroraptor was found in Argentina and is 230 million years old.",
         },
         {
-            question: "When was the mass extinction of dinosaurs?",
-            answer: "65 million years ago",
+            question: "Question: When was the mass extinction of dinosaurs?",
+            answer: "Answer: 65 million years ago",
         },
         {
-            question: "Which dinosaur had the smallest brain?",
-            answer: "Stegosaurus",
+            question: "Question: Which dinosaur had the smallest brain?",
+            answer: "Amswer: Stegosaurus",
         },
         {
-            question: "How much food did a Tyrannosaurus rex consume each year?",
-            answer: "22 tons of meat",
+            question: "Question: How much food did a Tyrannosaurus rex consume each year?",
+            answer: "Answer: 22 tons of meat",
         }
     ]
     placeHolder = 0
@@ -123,7 +121,6 @@ previousButton.addEventListener("click", () => {
     })
     
 rightButton.addEventListener("click", () => {
-    // flashCards[placeHolder].answeredCorrectly = true
     scoreNumber += 5
     score.innerText = scoreNumber
     flashCards.splice(placeHolder, 1)
@@ -132,7 +129,6 @@ rightButton.addEventListener("click", () => {
         return 
     }
     console.log(flashCards)
-    // placeHolder += 1
     let nextQuestion = flashCards[placeHolder]
     if (flashCards[placeHolder] === undefined) {
         placeHolder = 0
@@ -141,23 +137,8 @@ rightButton.addEventListener("click", () => {
     flashFront.innerText = flashCards[placeHolder].question
     })
 
-// HELP ME
-// -right cards push to array??
-// -does functionality match requirements?
-// -CSS
-// -Do I even need a wrong button??
-// spacebar key separate
-  
 
 
-
-
-// function finalScore(number) {
-//     if (number === 20) {
-//       return alert("You won!")
-//     }
-// }
-// console.log(finalScore())
 
 
 
