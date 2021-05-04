@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    /* display: flex;
+    flex-direction: column; */
+    background-image: url("lib/61FPnAtHRHL._AC_SL1134_.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* justify-content: center; */
+}
+
+h1, p {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border: 4px black;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+}
+ 
+#entire-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#flash-card {
+    display: flex;
+    justify-content: center;
+}
+
+ .flash-card-front {
+    background-color: white;
+    height: 200px;
+    width: 600px;
+    text-align: center;
+    padding: 80px 0 0 0;
+    border: black 10px;
+}
+
+#button-section {
+    display: flex;
+    justify-content: center;
+}
+
+#score-div {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* #flip {
+    margin: 0 100px 0 200px;
+} */
+
+/* #start-button {
+    display: flex;
+    justify-content: center;
+} */
+
+#score {
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+    display: flex;
+    flex-direction: row;
+    }
+}
