@@ -26,12 +26,28 @@ let flashCards = [
         answer: "Triassic, Jurassic, and Cretaceous",
     },
     {
-        question: "more questions",
-        answer: "another answer!",
+        question: "What do you call a person who studies dinosaurs?",
+        answer: "paleontologist",
     },
     {
-        question: "one more set!",
-        answer: "ghakdhgaldkhga",
+        question: "What does Velociraptor mean?",
+        answer: "speedy thief",
+    },
+    {
+        question: "What is the oldest dinosaur found so far?",
+        answer: "The Euroraptor was found in Argentina and is 230 million years old.",
+    },
+    {
+        question: "When was the mass extinction of dinosaurs?",
+        answer: "65 million years ago",
+    },
+    {
+        question: "Which dinosaur had the smallest brain?",
+        answer: "Stegosaurus",
+    },
+    {
+        question: "How much food did a Tyrannosaurus rex consume each year?",
+        answer: "22 tons of meat",
     }
 ]
 
@@ -48,12 +64,28 @@ startButton.addEventListener("click", () => {
             answer: "Triassic, Jurassic, and Cretaceous",
         },
         {
-            question: "more questions",
-            answer: "another answer!",
+            question: "What do you call a person who studies dinosaurs?",
+            answer: "paleontologist",
         },
         {
-            question: "one more set!",
-            answer: "ghakdhgaldkhga",
+            question: "What does Velociraptor mean?",
+            answer: "speedy thief",
+        },
+        {
+            question: "What is the oldest dinosaur found so far?",
+            answer: "The Euroraptor was found in Argentina and is 230 million years old.",
+        },
+        {
+            question: "When was the mass extinction of dinosaurs?",
+            answer: "65 million years ago",
+        },
+        {
+            question: "Which dinosaur had the smallest brain?",
+            answer: "Stegosaurus",
+        },
+        {
+            question: "How much food did a Tyrannosaurus rex consume each year?",
+            answer: "22 tons of meat",
         }
     ]
     placeHolder = 0
