@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;600&display=swap'); */
 
 * {
     box-sizing: border-box;
@@ -45,10 +44,9 @@ button {
 }
 
 #start-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100px;
+    text-align: center;
+    width: 150px;
+    border-radius: 50%;
 } 
 
 #flash-card {
@@ -77,9 +75,6 @@ button {
 }
 
 #score-div {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     background-color: white;
     width: 500px;
     margin: 20px;
@@ -88,15 +83,3 @@ button {
     align-items: center;
     text-align: center;
 }
-
-
-/* #score { */
-    /* padding: 10px; */
-/* } */
-
-/* @media screen and (max-width: 400px) {
-    body {
-    display: flex;
-    flex-direction: row;
-    }
-} */
