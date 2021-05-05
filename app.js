@@ -92,9 +92,33 @@ startButton.addEventListener("click", () => {
     flashFront.innerText = flashCards[placeHolder].question
 }) 
 
+previousButton.addEventListener("click", () => {
+    placeHolder -= 1
+    if (flashCards[placeHolder] === undefined) {
+        placeHolder = flashCards.length-1
+    }
+    flashFront.innerText = flashCards[placeHolder].question
+    })
+
 flipButton.addEventListener("click", () => { 
     flashFront.innerText = flashCards[placeHolder].answer 
 })
+
+rightButton.addEventListener("click", () => {
+    scoreNumber += 5
+    score.innerText = scoreNumber
+    flashCards.splice(placeHolder, 1)
+    if (flashCards.length === 0) {
+        alert("Congrats! Game Over!")
+        return 
+    }
+    console.log(flashCards)
+    let nextQuestion = flashCards[placeHolder]
+    if (flashCards[placeHolder] === undefined) {
+        placeHolder = 0
+    }
+    flashFront.innerText = flashCards[placeHolder].question
+    })
 
 nextButton.addEventListener("click", () => {
     placeHolder += 1
@@ -111,35 +135,4 @@ nextButton.addEventListener("onkeyup", () => {
     }
     flashFront.innerText = flashCards[placeHolder].question
     })
-
-previousButton.addEventListener("click", () => {
-    placeHolder -= 1
-    if (flashCards[placeHolder] === undefined) {
-        placeHolder = flashCards.length-1
-    }
-    flashFront.innerText = flashCards[placeHolder].question
-    })
-    
-rightButton.addEventListener("click", () => {
-    scoreNumber += 5
-    score.innerText = scoreNumber
-    flashCards.splice(placeHolder, 1)
-    if (flashCards.length === 0) {
-        alert("Congrats! Game Over!")
-        return 
-    }
-    console.log(flashCards)
-    let nextQuestion = flashCards[placeHolder]
-    if (flashCards[placeHolder] === undefined) {
-        placeHolder = 0
-    }
-
-    flashFront.innerText = flashCards[placeHolder].question
-    })
-
-
-
-
-
-
 
